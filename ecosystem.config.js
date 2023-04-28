@@ -20,7 +20,7 @@ module.exports = {
             host: "mookood.ee",
             ref: "origin/master",
             repo: "git@github.com:vikatgen/nodejs-express-practice.git",
-            path: "/data01/virt115315@mookood.ee/www.mookood.ee",
+            path: "/var/www/production",
             "pre-deploy-local": "",
             "post-deploy":
                 "npm install && pm2 reload ecosystem.config.js --env production",
