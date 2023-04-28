@@ -2,7 +2,10 @@ const express = require("express");
 const app = express();
 
 app.get("/", (request, response) => {
-    response.send("Avaleht");
+    response.json({
+        message: "Nothing to see here, move along",
+        host: "www.mookood.ee",
+    });
 });
 
 app.get("/products", (request, response) => {
@@ -34,6 +37,6 @@ app.get("/products/:productID", (request, response) => {
     response.status(200).json(product);
 });
 
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT || 3007, () => {
     console.log(`Server is listening on port ${process.env.PORT || 8000}`);
 });

@@ -1,10 +1,11 @@
 {
   "name": "nodejs-basic-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple school project for creating APIs with NodeJS.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "pm2 start deploy.js --env development",
+    "prod": "pm2 start deploy.js --env production"
   },
   "keywords": [],
   "author": "",
