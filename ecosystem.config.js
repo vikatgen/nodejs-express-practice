@@ -18,6 +18,7 @@ module.exports = {
         production: {
             user: "virt115315",
             host: "mookood.ee",
+            key: "~/.ssh/id_ed25519.pub",
             ref: "origin/master",
             repo: "git@github.com:vikatgen/nodejs-express-practice.git",
             fetch: "all",
